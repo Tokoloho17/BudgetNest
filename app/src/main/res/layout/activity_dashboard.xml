@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Create Category Button -->
+    <Button
+        android:id="@+id/btnCategory"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="60dp"
+        android:background="#039E09"
+        android:text="Create Category"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Create Expense Button -->
+    <Button
+        android:id="@+id/btnExpenes"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="61dp"
+        android:background="#039E09"
+        android:text="Create Expense"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@id/btnCategory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Budget Goals Button -->
+    <Button
+        android:id="@+id/btnBudgetGoals"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="220dp"
+        android:background="#039E09"
+        android:text="Budget Goals"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnExpenes" />
+
+    <!-- View Expenses Button -->
+    <Button
+        android:id="@+id/btnViewExpenses"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="220dp"
+        android:background="#039E09"
+        android:text="View Expenses"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@id/btnBudgetGoals"
+        app:layout_constraintTop_toBottomOf="@id/btnExpenes" />
+
+    <!-- Rewards Button -->
+    <Button
+        android:id="@+id/btnRewards"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="380dp"
+        android:background="#039E09"
+        android:text="Rewards"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnViewExpenses" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

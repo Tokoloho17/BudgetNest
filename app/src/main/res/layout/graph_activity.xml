@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphActivity">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!--Graph icon-->
+    <ImageView
+        android:id="@+id/graphIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="354dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_graph"
+        app:layout_constraintStart_toEndOf="@+id/backArrow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="44dp"
+        android:text="Budget and savings Goals"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <!--Categories-->
+    <TextView
+        android:id="@+id/categoryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:text="Category Breakdown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/groceriesLabel"
+        android:layout_width="360dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="41dp"
+        android:text="Groceries"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryHeader"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/groceriesAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="341dp"
+        android:text="R460"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/groceriesLabel"
+        app:layout_constraintTop_toBottomOf="@+id/graphIcon"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/transportLabel"
+        android:layout_width="358dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="19dp"
+        android:text="Transport"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groceriesLabel"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/transportAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="23dp"
+        android:text="R320"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/transportLabel"
+        app:layout_constraintTop_toBottomOf="@+id/groceriesAmount"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/entertainmentLabel"
+        android:layout_width="357dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Entertainment"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transportLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/entertainmentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="R260"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/entertainmentLabel"
+        app:layout_constraintTop_toBottomOf="@+id/transportAmount"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:srcCompat="@drawable/img_1"
+        tools:ignore="ContentDescription" />
+
+    <!--Done button-->
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#5E8750"
+        android:text="Done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entertainmentLabel"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetGoalsActivity">
+
+    <!-- Back arrow icon -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!-- More info dots -->
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_three_dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/tvBudgetGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Budget and Savings Goals"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvApril"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="April"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvBudgetGoals"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Amount -->
+    <TextView
+        android:id="@+id/tvAprilAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="R1,200"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvBudgetGoals"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Progress bar -->
+    <ProgressBar
+        android:id="@+id/progressApril"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D3D3D3"
+        android:max="100"
+        android:progress="60"
+        android:progressTint="#5E8750"
+        app:layout_constraintTop_toBottomOf="@+id/tvApril"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Groceries -->
+    <TextView
+        android:id="@+id/tvGroceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Groceries"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/progressApril"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvGroceriesAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="R50/300"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/progressApril"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Transport -->
+    <TextView
+        android:id="@+id/tvTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transport"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/tvGroceries"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvTransportAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R10/150"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGroceriesAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Entertainment -->
+    <TextView
+        android:id="@+id/tvEntertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entertainment"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransport"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvEntertainmentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R180/200"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransportAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Input for goal amount -->
+    <EditText
+        android:id="@+id/etGoalAmount"
+        android:layout_width="384dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter goal amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntertainmentAmount" />
+
+    <!-- Save Goal button -->
+
+    <!-- Add new goal button -->
+    <Button
+        android:id="@+id/btnSaveGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5E8750"
+        android:text="Save Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGoalAmount" />
+
+    <Button
+        android:id="@+id/btnAddGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#5E8750"
+        android:text="Add new goal"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveGoal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
