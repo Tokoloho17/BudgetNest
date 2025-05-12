@@ -1,5 +1,7 @@
 
 #  BudgetNestPrototype
+Application was coded and compiled by: Sendzo Matooane ST10369554, Tichafara Zimudzi ST10365028, Thembani Ngobeni ST10312968, Tokoloho Hlalele ST10262724
+
 
 **BudgetNestPrototype** is a personal budgeting app built with Kotlin for Android. It allows users to track their spending, set budgeting goals, and manage expenses across different categories. This app is ideal for students, young professionals, and anyone aiming to better understand and control their finances.
 
